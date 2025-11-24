@@ -1,0 +1,1818 @@
+{
+	"info": {
+		"_postman_id": "8b32ab07-aba3-42cd-a298-9d8208dea357",
+		"name": "Bots_createcopy_getpublicBotTrade_calculate_stop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42567666"
+	},
+	"item": [
+		{
+			"name": "Create_copyBot_average",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"custombatchtest\",\r\n    \"skyrexUserUuid\": \"0df3ba96-06f0-4850-b9d9-bfea785fe742\",\r\n    \"exchangeAccountUuid\": \"7cc456a2-5e80-4484-a9e5-5907bb7792d8\",\r\n    \"exchangeCode\": \"bybit-futures\",\r\n    \"botType\": \"COPY\",\r\n    \"copyFromBotUuid\": \"e6136f99-6321-4906-a5cc-f35775301c80\",\r\n    \"tradingAmount\": \"1000\",\r\n    \"quote\": \"USDT\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Stage backend}}/bot/createBot",
+					"host": [
+						"{{Stage backend}}"
+					],
+					"path": [
+						"bot",
+						"createBot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_copyBot_min",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"custombatchtest\",\r\n    \"skyrexUserUuid\": \"0df3ba96-06f0-4850-b9d9-bfea785fe742\",\r\n    \"exchangeAccountUuid\": \"7cc456a2-5e80-4484-a9e5-5907bb7792d8\",\r\n    \"exchangeCode\": \"bybit-futures\",\r\n    \"botType\": \"COPY\",\r\n    \"copyFromBotUuid\": \"e6136f99-6321-4906-a5cc-f35775301c80\",\r\n    \"tradingAmount\": \"10\",\r\n    \"quote\": \"USDT\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Stage backend}}/bot/createBot",
+					"host": [
+						"{{Stage backend}}"
+					],
+					"path": [
+						"bot",
+						"createBot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_copyBot_nonautorisation",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"custombatchtest\",\r\n    \"skyrexUserUuid\": \"0df3ba96-06f0-4850-b9d9-bfea785fe742\",\r\n    \"exchangeAccountUuid\": \"7cc456a2-5e80-4484-a9e5-5907bb7792d8\",\r\n    \"exchangeCode\": \"bybit-futures\",\r\n    \"botType\": \"COPY\",\r\n    \"copyFromBotUuid\": \"e6136f99-6321-4906-a5cc-f35775301c80\",\r\n    \"tradingAmount\": \"1000\",\r\n    \"quote\": \"USDT\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Stage backend}}/bot/createBot",
+					"host": [
+						"{{Stage backend}}"
+					],
+					"path": [
+						"bot",
+						"createBot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_copyBot_tokenexpired",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJza3lyZXhVc2VyVXVpZCI6ImExZDdkYTA5LTJiNDUtNGNkYy05NThlLWJmYzAxZDc0NmVkMCIsInJvbGUiOiJ1c2VyIiwibGFzdExvZ2luIjoiMjAyNS0wOS0wN1QxMzowODo1NS4wNzBaIiwic2Vzc2lvblV1aWQiOiIyZjkzZTc3Ny0yMmRlLTRhYjAtYTgzZS0xMjUyNzAxOTZmMWUiLCJpYXQiOjE3NTcyNTA1MzUsImV4cCI6MTc1NzI1MTQzNX0.4DWxaPwtJMBap4H1A8o8jUDmw_brEL2sYEIV36eI410",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"custombatchtest\",\r\n    \"skyrexUserUuid\": \"0df3ba96-06f0-4850-b9d9-bfea785fe742\",\r\n    \"exchangeAccountUuid\": \"7cc456a2-5e80-4484-a9e5-5907bb7792d8\",\r\n    \"exchangeCode\": \"bybit-futures\",\r\n    \"botType\": \"COPY\",\r\n    \"copyFromBotUuid\": \"e6136f99-6321-4906-a5cc-f35775301c80\",\r\n    \"tradingAmount\": \"1000\",\r\n    \"quote\": \"USDT\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Stage backend}}/bot/createBot",
+					"host": [
+						"{{Stage backend}}"
+					],
+					"path": [
+						"bot",
+						"createBot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_copyBot_other_exchanged",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"custombatchtest\",\r\n    \"skyrexUserUuid\": \"0df3ba96-06f0-4850-b9d9-bfea785fe742\",\r\n    \"exchangeAccountUuid\": \"7cc456a2-5e80-4484-a9e5-5907bb7792d8\",\r\n    \"exchangeCode\": \"USDT\",\r\n    \"botType\": \"COPY\",\r\n    \"copyFromBotUuid\": \"e6136f99-6321-4906-a5cc-f35775301c80\",\r\n    \"tradingAmount\": \"1000\",\r\n    \"quote\": \"USDT\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Stage backend}}/bot/createBot",
+					"host": [
+						"{{Stage backend}}"
+					],
+					"path": [
+						"bot",
+						"createBot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_copyBot_bot_notfound",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"custombatchtest\",\r\n    \"skyrexUserUuid\": \"0df3ba96-06f0-4850-b9d9-bfea785fe742\",\r\n    \"exchangeAccountUuid\": \"7cc456a2-5e80-4484-a9e5-5907bb7792d8\",\r\n    \"exchangeCode\": \"bybit-futures\",\r\n    \"botType\": \"COPY\",\r\n    \"copyFromBotUuid\": \"e6136f99-6321-4906-a5ff-f35775301c80\",\r\n    \"tradingAmount\": \"1000\",\r\n    \"quote\": \"USDT\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Stage backend}}/bot/createBot",
+					"host": [
+						"{{Stage backend}}"
+					],
+					"path": [
+						"bot",
+						"createBot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getByFilterPublicBots_sharingFalse",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"botType\":\"CUSTOM\",\"allowSharing\":\"false\",\"page\":1,\"skyrexUserUuid\":\"a1d7da09-2b45-4cdc-958e-bfc01d746ed0\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Stage backend}}/bot/getByFilterPublicBots",
+					"host": [
+						"{{Stage backend}}"
+					],
+					"path": [
+						"bot",
+						"getByFilterPublicBots"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getByFilterPublicBots",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"botType\": \"CUSTOM\",\n\"allowSharing\": \"TRUE\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Stage backend}}/bot/getByFilterPublicBots",
+							"host": [
+								"{{Stage backend}}"
+							],
+							"path": [
+								"bot",
+								"getByFilterPublicBots"
+							]
+						}
+					},
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "Create_copyBot_bot_TrAtoosmall",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,es;q=0.6,it;q=0.5"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJza3lyZXhVc2VyVXVpZCI6IjBkZjNiYTk2LTA2ZjAtNDg1MC1iOWQ5LWJmZWE3ODVmZTc0MiIsInJvbGUiOiJ1c2VyIiwibGFzdExvZ2luIjoiMjAyNS0wOS0wN1QxNTowMjo1OC4xNzFaIiwic2Vzc2lvblV1aWQiOiIwMmU1MDRjNi1jODM4LTQ1OWEtODAzOC0yNjkxMzg0MTAxNmEiLCJpYXQiOjE3NTcyNTczNzgsImV4cCI6MTc1NzI1ODI3OH0.RgTZgFyhD37WujI0mKET86mEcHnos1VWsUi-2ftf4-g"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://test.skyrexio.com"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://test.skyrexio.com/trading-bots/marketplace"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Google Chrome\";v=\"140\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"testItem\",\"skyrexUserUuid\":\"0df3ba96-06f0-4850-b9d9-bfea785fe742\",\"exchangeAccountUuid\":\"9fa77abb-a846-47de-b30e-bd6613bf6a5a\",\"exchangeCode\":\"demo\",\"botType\":\"COPY\",\"quote\":\"USDT\",\"copyFromBotUuid\":\"5d8823dc-b84c-41d8-9625-fc771d70209e\",\"tradingAmount\":5}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dev.skyrexio.com/bot/createBot",
+					"protocol": "https",
+					"host": [
+						"dev",
+						"skyrexio",
+						"com"
+					],
+					"path": [
+						"bot",
+						"createBot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_copyBot_botnoname",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"\",\r\n    \"skyrexUserUuid\": \"0df3ba96-06f0-4850-b9d9-bfea785fe742\",\r\n    \"exchangeAccountUuid\": \"7cc456a2-5e80-4484-a9e5-5907bb7792d8\",\r\n    \"exchangeCode\": \"bybit-futures\",\r\n    \"botType\": \"COPY\",\r\n    \"copyFromBotUuid\": \"e6136f99-6321-4906-a5cc-f35775301c80\",\r\n    \"tradingAmount\": \"1000\",\r\n    \"quote\": \"USDT\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Stage backend}}/bot/createBot",
+					"host": [
+						"{{Stage backend}}"
+					],
+					"path": [
+						"bot",
+						"createBot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_copyBot_botnoquote",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"custombatchtest\",\r\n    \"skyrexUserUuid\": \"0df3ba96-06f0-4850-b9d9-bfea785fe742\",\r\n    \"exchangeAccountUuid\": \"7cc456a2-5e80-4484-a9e5-5907bb7792d8\",\r\n    \"exchangeCode\": \"bybit-futures\",\r\n    \"botType\": \"COPY\",\r\n    \"copyFromBotUuid\": \"e6136f99-6321-4906-a5cc-f35775301c80\",\r\n    \"tradingAmount\": \"1000\",\r\n    \"quote\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Stage backend}}/bot/createBot",
+					"host": [
+						"{{Stage backend}}"
+					],
+					"path": [
+						"bot",
+						"createBot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_copyBot_botnoskyrexuserUuid",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"custombatchtest\",\r\n    \"skyrexUserUuid\": \"\",\r\n    \"exchangeAccountUuid\": \"7cc456a2-5e80-4484-a9e5-5907bb7792d8\",\r\n    \"exchangeCode\": \"bybit-futures\",\r\n    \"botType\": \"COPY\",\r\n    \"copyFromBotUuid\": \"e6136f99-6321-4906-a5cc-f35775301c80\",\r\n    \"tradingAmount\": \"1000\",\r\n    \"quote\": \"USDT\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Stage backend}}/bot/createBot",
+					"host": [
+						"{{Stage backend}}"
+					],
+					"path": [
+						"bot",
+						"createBot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_copyBot_botnoskyrexuserUuidinvalid",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"custombatchtest\",\r\n    \"skyrexUserUuid\": \"0df4ba96-06f0-4850-b8d9-bfea785fe742\",\r\n    \"exchangeAccountUuid\": \"7cc456a2-5e80-4484-a9e5-5907bb7792d8\",\r\n    \"exchangeCode\": \"bybit-futures\",\r\n    \"botType\": \"COPY\",\r\n    \"copyFromBotUuid\": \"e6136f99-6321-4906-a5cc-f35775301c80\",\r\n    \"tradingAmount\": \"1000\",\r\n    \"quote\": \"USDT\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Stage backend}}/bot/createBot",
+					"host": [
+						"{{Stage backend}}"
+					],
+					"path": [
+						"bot",
+						"createBot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_copyBot_TRAcyryllic",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"custombatchtest\",\r\n    \"skyrexUserUuid\": \"0df3ba96-06f0-4850-b9d9-bfea785fe742\",\r\n    \"exchangeAccountUuid\": \"7cc456a2-5e80-4484-a9e5-5907bb7792d8\",\r\n    \"exchangeCode\": \"bybit-futures\",\r\n    \"botType\": \"COPY\",\r\n    \"copyFromBotUuid\": \"e6136f99-6321-4906-a5cc-f35775301c80\",\r\n    \"tradingAmount\": \"прпрпр\",\r\n    \"quote\": \"USDT\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Stage backend}}/bot/createBot",
+					"host": [
+						"{{Stage backend}}"
+					],
+					"path": [
+						"bot",
+						"createBot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_copyBot_TRAlatinic",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"custombatchtest\",\r\n    \"skyrexUserUuid\": \"0df3ba96-06f0-4850-b9d9-bfea785fe742\",\r\n    \"exchangeAccountUuid\": \"7cc456a2-5e80-4484-a9e5-5907bb7792d8\",\r\n    \"exchangeCode\": \"bybit-futures\",\r\n    \"botType\": \"COPY\",\r\n    \"copyFromBotUuid\": \"e6136f99-6321-4906-a5cc-f35775301c80\",\r\n    \"tradingAmount\": \"adadada\",\r\n    \"quote\": \"USDT\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Stage backend}}/bot/createBot",
+					"host": [
+						"{{Stage backend}}"
+					],
+					"path": [
+						"bot",
+						"createBot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_copyBot_TRA0",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"custombatchtest\",\r\n    \"skyrexUserUuid\": \"0df3ba96-06f0-4850-b9d9-bfea785fe742\",\r\n    \"exchangeAccountUuid\": \"7cc456a2-5e80-4484-a9e5-5907bb7792d8\",\r\n    \"exchangeCode\": \"bybit-futures\",\r\n    \"botType\": \"COPY\",\r\n    \"copyFromBotUuid\": \"e6136f99-6321-4906-a5cc-f35775301c80\",\r\n    \"tradingAmount\": \"0\",\r\n    \"quote\": \"USDT\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Stage backend}}/bot/createBot",
+					"host": [
+						"{{Stage backend}}"
+					],
+					"path": [
+						"bot",
+						"createBot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_copyBot_TRAtoomuch",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"custombatchtest\",\r\n    \"skyrexUserUuid\": \"0df3ba96-06f0-4850-b9d9-bfea785fe742\",\r\n    \"exchangeAccountUuid\": \"7cc456a2-5e80-4484-a9e5-5907bb7792d8\",\r\n    \"exchangeCode\": \"bybit-futures\",\r\n    \"botType\": \"COPY\",\r\n    \"copyFromBotUuid\": \"e6136f99-6321-4906-a5cc-f35775301c80\",\r\n    \"tradingAmount\": \"8998888888888888888888888222222222222222222745567567565675\",\r\n    \"quote\": \"USDT\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Stage backend}}/bot/createBot",
+					"host": [
+						"{{Stage backend}}"
+					],
+					"path": [
+						"bot",
+						"createBot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_copyBot_TRAspecific",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"custombatchtest\",\r\n    \"skyrexUserUuid\": \"0df3ba96-06f0-4850-b9d9-bfea785fe742\",\r\n    \"exchangeAccountUuid\": \"7cc456a2-5e80-4484-a9e5-5907bb7792d8\",\r\n    \"exchangeCode\": \"bybit-futures\",\r\n    \"botType\": \"COPY\",\r\n    \"copyFromBotUuid\": \"e6136f99-6321-4906-a5cc-f35775301c80\",\r\n    \"tradingAmount\": \"%@$%\",\r\n    \"quote\": \"USDT\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Stage backend}}/bot/createBot",
+					"host": [
+						"{{Stage backend}}"
+					],
+					"path": [
+						"bot",
+						"createBot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_copyBot_TRAemoji",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"custombatchtest\",\r\n    \"skyrexUserUuid\": \"0df3ba96-06f0-4850-b9d9-bfea785fe742\",\r\n    \"exchangeAccountUuid\": \"7cc456a2-5e80-4484-a9e5-5907bb7792d8\",\r\n    \"exchangeCode\": \"bybit-futures\",\r\n    \"botType\": \"COPY\",\r\n    \"copyFromBotUuid\": \"e6136f99-6321-4906-a5cc-f35775301c80\",\r\n    \"tradingAmount\": \"🙆‍♀️🍕🍕🍕🍕\",\r\n    \"quote\": \"USDT\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Stage backend}}/bot/createBot",
+					"host": [
+						"{{Stage backend}}"
+					],
+					"path": [
+						"bot",
+						"createBot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_copyBot_SQLinjection",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"custombatchtest'); DROP TABLE users; --\",\r\n    \"skyrexUserUuid\": \"0df3ba96-06f0-4850-b9d9-bfea785fe742\",\r\n    \"exchangeAccountUuid\": \"7cc456a2-5e80-4484-a9e5-5907bb7792d8\",\r\n    \"exchangeCode\": \"bybit-futures\",\r\n    \"botType\": \"COPY\",\r\n    \"copyFromBotUuid\": \"e6136f99-6321-4906-a5cc-f35775301c80\",\r\n    \"tradingAmount\": \"100\",\r\n    \"quote\": \"USDT\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Stage backend}}/bot/createBot",
+					"host": [
+						"{{Stage backend}}"
+					],
+					"path": [
+						"bot",
+						"createBot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_copyBot_OtherSkyrexId",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"custombatchtest\",\r\n    \"skyrexUserUuid\": \"a1d7da09-2b45-4cdc-958e-bfc01d746ed0\",\r\n    \"exchangeAccountUuid\": \"7cc456a2-5e80-4484-a9e5-5907bb7792d8\",\r\n    \"exchangeCode\": \"bybit-futures\",\r\n    \"botType\": \"COPY\",\r\n    \"copyFromBotUuid\": \"e6136f99-6321-4906-a5cc-f35775301c80\",\r\n    \"tradingAmount\": \"1000\",\r\n    \"quote\": \"USDT\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Stage backend}}/bot/createBot",
+					"host": [
+						"{{Stage backend}}"
+					],
+					"path": [
+						"bot",
+						"createBot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_copyBot_XSSinjection",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"custombatchtest'); DROP TABLE users; --\",\r\n    \"skyrexUserUuid\": \"0df3ba96-06f0-4850-b9d9-bfea785fe742\",\r\n    \"exchangeAccountUuid\": \"7cc456a2-5e80-4484-a9e5-5907bb7792d8\",\r\n    \"exchangeCode\": \"bybit-futures\",\r\n    \"botType\": \"COPY\",\r\n    \"copyFromBotUuid\": \"e6136f99-6321-4906-a5cc-f35775301c80\",\r\n    \"tradingAmount\": \"100\",\r\n    \"quote\": \"USDT\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Stage backend}}/bot/createBot",
+					"host": [
+						"{{Stage backend}}"
+					],
+					"path": [
+						"bot",
+						"createBot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_copyBot_GET",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"custombatchtest\",\r\n    \"skyrexUserUuid\": \"0df3ba96-06f0-4850-b9d9-bfea785fe742\",\r\n    \"exchangeAccountUuid\": \"7cc456a2-5e80-4484-a9e5-5907bb7792d8\",\r\n    \"exchangeCode\": \"bybit-futures\",\r\n    \"botType\": \"COPY\",\r\n    \"copyFromBotUuid\": \"e6136f99-6321-4906-a5cc-f35775301c80\",\r\n    \"tradingAmount\": \"1000\",\r\n    \"quote\": \"USDT\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Stage backend}}/bot/createBot",
+					"host": [
+						"{{Stage backend}}"
+					],
+					"path": [
+						"bot",
+						"createBot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_copyBot_GET Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"custombatchtest\",\r\n    \"skyrexUserUuid\": \"0df3ba96-06f0-4850-b9d9-bfea785fe742\",\r\n    \"exchangeAccountUuid\": \"7cc456a2-5e80-4484-a9e5-5907bb7792d8\",\r\n    \"exchangeCode\": \"bybit-futures\",\r\n    \"botType\": \"COPY\",\r\n    \"copyFromBotUuid\": \"e6136f99-6321-4906-a5cc-f35775301c80\",\r\n    \"tradingAmount\": \"1000\",\r\n    \"quote\": \"USDT\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Stage backend}}/bot/createBot",
+					"host": [
+						"{{Stage backend}}"
+					],
+					"path": [
+						"bot",
+						"createBot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "calculateStatistic_Positive",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"botUuid\": \"e2b6db1e-7385-4d22-81d7-d7872bb8f122\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Stage backend}}/bot/calculateStatistic",
+					"host": [
+						"{{Stage backend}}"
+					],
+					"path": [
+						"bot",
+						"calculateStatistic"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "calculateStatistic",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"botUuid\": \"uuid бота по которому нужна статистика\",\n    \"createdDateFrom\": \"дата создания от\", //(необязательный)\n    \"createdDateTo\": \"дата создания до\", //(необязательный)\n    \"closedDateFrom\": \"дата закрытия от\", //(необязательный)\n    \"closedDateTo\": \"дата закрытия до\" //(необязательный)\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Stage backend}}/bot/calculateStatistic",
+							"host": [
+								"{{Stage backend}}"
+							],
+							"path": [
+								"bot",
+								"calculateStatistic"
+							]
+						}
+					},
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "calculateStatistic_nonAutorization",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"botUuid\": \"e2b6db1e-7385-4d22-81d7-d7872bb8f122\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Stage backend}}/bot/calculateStatistic",
+					"host": [
+						"{{Stage backend}}"
+					],
+					"path": [
+						"bot",
+						"calculateStatistic"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "calculateStatistic",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"botUuid\": \"uuid бота по которому нужна статистика\",\n    \"createdDateFrom\": \"дата создания от\", //(необязательный)\n    \"createdDateTo\": \"дата создания до\", //(необязательный)\n    \"closedDateFrom\": \"дата закрытия от\", //(необязательный)\n    \"closedDateTo\": \"дата закрытия до\" //(необязательный)\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Stage backend}}/bot/calculateStatistic",
+							"host": [
+								"{{Stage backend}}"
+							],
+							"path": [
+								"bot",
+								"calculateStatistic"
+							]
+						}
+					},
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "calculateStatistic_tokenexpired",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"botUuid\": \"e2b6db1e-7385-4d22-81d7-d7872bb8f122\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Stage backend}}/bot/calculateStatistic",
+					"host": [
+						"{{Stage backend}}"
+					],
+					"path": [
+						"bot",
+						"calculateStatistic"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "calculateStatistic",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"botUuid\": \"uuid бота по которому нужна статистика\",\n    \"createdDateFrom\": \"дата создания от\", //(необязательный)\n    \"createdDateTo\": \"дата создания до\", //(необязательный)\n    \"closedDateFrom\": \"дата закрытия от\", //(необязательный)\n    \"closedDateTo\": \"дата закрытия до\" //(необязательный)\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Stage backend}}/bot/calculateStatistic",
+							"host": [
+								"{{Stage backend}}"
+							],
+							"path": [
+								"bot",
+								"calculateStatistic"
+							]
+						}
+					},
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "calculateStatistic_NO_UUID",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"botUuid\": \"e2b6db1e-7385-4d22-81d7-d7872bb8f122\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Stage backend}}/bot/calculateStatistic",
+					"host": [
+						"{{Stage backend}}"
+					],
+					"path": [
+						"bot",
+						"calculateStatistic"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "calculateStatistic",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"botUuid\": \"uuid бота по которому нужна статистика\",\n    \"createdDateFrom\": \"дата создания от\", //(необязательный)\n    \"createdDateTo\": \"дата создания до\", //(необязательный)\n    \"closedDateFrom\": \"дата закрытия от\", //(необязательный)\n    \"closedDateTo\": \"дата закрытия до\" //(необязательный)\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Stage backend}}/bot/calculateStatistic",
+							"host": [
+								"{{Stage backend}}"
+							],
+							"path": [
+								"bot",
+								"calculateStatistic"
+							]
+						}
+					},
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "calculateStatistic_Deleted_bot",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJza3lyZXhVc2VyVXVpZCI6IjBkZjNiYTk2LTA2ZjAtNDg1MC1iOWQ5LWJmZWE3ODVmZTc0MiIsInJvbGUiOiJ1c2VyIiwibGFzdExvZ2luIjoiMjAyNS0wOS0wOFQwNzo1NDozNy4xODJaIiwic2Vzc2lvblV1aWQiOiIwMmU1MDRjNi1jODM4LTQ1OWEtODAzOC0yNjkxMzg0MTAxNmEiLCJpYXQiOjE3NTczMTgwNzcsImV4cCI6MTc1NzMxODk3N30.MHX6wVL17ok1qKoDE7XA6NDq58fpf2ooLlKzeFKnZqQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"botUuid\":\"459a9032-29fb-4187-adbb-14df7eda9a82\",\"closedDateFrom\":\"2025-08-10 00:00:00\",\"closedDateTo\":\"2026-09-08 23:59:59\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Stage backend}}/bot/calculateStatistic",
+					"host": [
+						"{{Stage backend}}"
+					],
+					"path": [
+						"bot",
+						"calculateStatistic"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "calculateStatistic",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"botUuid\": \"uuid бота по которому нужна статистика\",\n    \"createdDateFrom\": \"дата создания от\", //(необязательный)\n    \"createdDateTo\": \"дата создания до\", //(необязательный)\n    \"closedDateFrom\": \"дата закрытия от\", //(необязательный)\n    \"closedDateTo\": \"дата закрытия до\" //(необязательный)\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Stage backend}}/bot/calculateStatistic",
+							"host": [
+								"{{Stage backend}}"
+							],
+							"path": [
+								"bot",
+								"calculateStatistic"
+							]
+						}
+					},
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "calculateStatistic_Calendar_tooold",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"botUuid\": \"e2b6db1e-7385-4d22-81d7-d7872bb8f122\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Stage backend}}/bot/calculateStatistic",
+					"host": [
+						"{{Stage backend}}"
+					],
+					"path": [
+						"bot",
+						"calculateStatistic"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "calculateStatistic",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"botUuid\": \"uuid бота по которому нужна статистика\",\n    \"createdDateFrom\": \"дата создания от\", //(необязательный)\n    \"createdDateTo\": \"дата создания до\", //(необязательный)\n    \"closedDateFrom\": \"дата закрытия от\", //(необязательный)\n    \"closedDateTo\": \"дата закрытия до\" //(необязательный)\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Stage backend}}/bot/calculateStatistic",
+							"host": [
+								"{{Stage backend}}"
+							],
+							"path": [
+								"bot",
+								"calculateStatistic"
+							]
+						}
+					},
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "calculateStatistic_Get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJza3lyZXhVc2VyVXVpZCI6IjBkZjNiYTk2LTA2ZjAtNDg1MC1iOWQ5LWJmZWE3ODVmZTc0MiIsInJvbGUiOiJ1c2VyIiwibGFzdExvZ2luIjoiMjAyNS0wOS0wOFQwNzo1NDozNy4xODJaIiwic2Vzc2lvblV1aWQiOiIwMmU1MDRjNi1jODM4LTQ1OWEtODAzOC0yNjkxMzg0MTAxNmEiLCJpYXQiOjE3NTczMTgwNzcsImV4cCI6MTc1NzMxODk3N30.MHX6wVL17ok1qKoDE7XA6NDq58fpf2ooLlKzeFKnZqQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"botUuid\":\"459a9032-29fb-4187-adbb-14df7eda9a82\",\"closedDateFrom\":\"2025-07-10 00:00:00\",\"closedDateTo\":\"2025-09-08 23:59:59\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Stage backend}}/bot/calculateStatistic/459a9032-29fb-4187-adbb-14df7eda9a82",
+					"host": [
+						"{{Stage backend}}"
+					],
+					"path": [
+						"bot",
+						"calculateStatistic",
+						"459a9032-29fb-4187-adbb-14df7eda9a82"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "calculateStatistic",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"botUuid\": \"uuid бота по которому нужна статистика\",\n    \"createdDateFrom\": \"дата создания от\", //(необязательный)\n    \"createdDateTo\": \"дата создания до\", //(необязательный)\n    \"closedDateFrom\": \"дата закрытия от\", //(необязательный)\n    \"closedDateTo\": \"дата закрытия до\" //(необязательный)\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Stage backend}}/bot/calculateStatistic",
+							"host": [
+								"{{Stage backend}}"
+							],
+							"path": [
+								"bot",
+								"calculateStatistic"
+							]
+						}
+					},
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "stopBots_Positive",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJza3lyZXhVc2VyVXVpZCI6IjBkZjNiYTk2LTA2ZjAtNDg1MC1iOWQ5LWJmZWE3ODVmZTc0MiIsInJvbGUiOiJ1c2VyIiwibGFzdExvZ2luIjoiMjAyNS0wOS0wOFQwODoxMzo1NS4yOTVaIiwic2Vzc2lvblV1aWQiOiIwMmU1MDRjNi1jODM4LTQ1OWEtODAzOC0yNjkxMzg0MTAxNmEiLCJpYXQiOjE3NTczMTkyMzUsImV4cCI6MTc1NzMyMDEzNX0.st4PKlCTGkkaJ64vxGj_B9-lcPdYHjmPGwmFFuZmxYw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"botUuids\": [\"f6aa8daf-4090-434e-bdc3-125e2566d263\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Stage backend}}/bot/stopBots",
+					"host": [
+						"{{Stage backend}}"
+					],
+					"path": [
+						"bot",
+						"stopBots"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "stopBots",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"botUuids\": [\"uuid\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Stage backend}}/bot/stopBots",
+							"host": [
+								"{{Stage backend}}"
+							],
+							"path": [
+								"bot",
+								"stopBots"
+							]
+						}
+					},
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "stopBots_Negative_noID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJza3lyZXhVc2VyVXVpZCI6IjBkZjNiYTk2LTA2ZjAtNDg1MC1iOWQ5LWJmZWE3ODVmZTc0MiIsInJvbGUiOiJ1c2VyIiwibGFzdExvZ2luIjoiMjAyNS0wOS0wOFQwODoxMzo1NS4yOTVaIiwic2Vzc2lvblV1aWQiOiIwMmU1MDRjNi1jODM4LTQ1OWEtODAzOC0yNjkxMzg0MTAxNmEiLCJpYXQiOjE3NTczMTkyMzUsImV4cCI6MTc1NzMyMDEzNX0.st4PKlCTGkkaJ64vxGj_B9-lcPdYHjmPGwmFFuZmxYw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"botUuids\": [\"f6aa8daf-4090-434e-bdc3-125e2566d263\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Stage backend}}/bot/stopBots",
+					"host": [
+						"{{Stage backend}}"
+					],
+					"path": [
+						"bot",
+						"stopBots"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "stopBots",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"botUuids\": [\"uuid\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Stage backend}}/bot/stopBots",
+							"host": [
+								"{{Stage backend}}"
+							],
+							"path": [
+								"bot",
+								"stopBots"
+							]
+						}
+					},
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "stopBots_Just_stopped",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJza3lyZXhVc2VyVXVpZCI6IjBkZjNiYTk2LTA2ZjAtNDg1MC1iOWQ5LWJmZWE3ODVmZTc0MiIsInJvbGUiOiJ1c2VyIiwibGFzdExvZ2luIjoiMjAyNS0wOS0wOFQwODoxMzo1NS4yOTVaIiwic2Vzc2lvblV1aWQiOiIwMmU1MDRjNi1jODM4LTQ1OWEtODAzOC0yNjkxMzg0MTAxNmEiLCJpYXQiOjE3NTczMTkyMzUsImV4cCI6MTc1NzMyMDEzNX0.st4PKlCTGkkaJ64vxGj_B9-lcPdYHjmPGwmFFuZmxYw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"botUuids\": [\"f6aa8daf-4090-434e-bdc3-125e2566d263\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Stage backend}}/bot/stopBots",
+					"host": [
+						"{{Stage backend}}"
+					],
+					"path": [
+						"bot",
+						"stopBots"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "stopBots",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"botUuids\": [\"uuid\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Stage backend}}/bot/stopBots",
+							"host": [
+								"{{Stage backend}}"
+							],
+							"path": [
+								"bot",
+								"stopBots"
+							]
+						}
+					},
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "stopBots_Just_2_more_bots",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJza3lyZXhVc2VyVXVpZCI6IjBkZjNiYTk2LTA2ZjAtNDg1MC1iOWQ5LWJmZWE3ODVmZTc0MiIsInJvbGUiOiJ1c2VyIiwibGFzdExvZ2luIjoiMjAyNS0wOS0wOFQwODoxMzo1NS4yOTVaIiwic2Vzc2lvblV1aWQiOiIwMmU1MDRjNi1jODM4LTQ1OWEtODAzOC0yNjkxMzg0MTAxNmEiLCJpYXQiOjE3NTczMTkyMzUsImV4cCI6MTc1NzMyMDEzNX0.st4PKlCTGkkaJ64vxGj_B9-lcPdYHjmPGwmFFuZmxYw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"botUuids\": [\"f6aa8daf-4090-434e-bdc3-125e2566d263\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Stage backend}}/bot/stopBots",
+					"host": [
+						"{{Stage backend}}"
+					],
+					"path": [
+						"bot",
+						"stopBots"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "stopBots",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"botUuids\": [\"uuid\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Stage backend}}/bot/stopBots",
+							"host": [
+								"{{Stage backend}}"
+							],
+							"path": [
+								"bot",
+								"stopBots"
+							]
+						}
+					},
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "stopBots_Just_2_status",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJza3lyZXhVc2VyVXVpZCI6IjBkZjNiYTk2LTA2ZjAtNDg1MC1iOWQ5LWJmZWE3ODVmZTc0MiIsInJvbGUiOiJ1c2VyIiwibGFzdExvZ2luIjoiMjAyNS0wOS0wOFQwODoxMzo1NS4yOTVaIiwic2Vzc2lvblV1aWQiOiIwMmU1MDRjNi1jODM4LTQ1OWEtODAzOC0yNjkxMzg0MTAxNmEiLCJpYXQiOjE3NTczMTkyMzUsImV4cCI6MTc1NzMyMDEzNX0.st4PKlCTGkkaJ64vxGj_B9-lcPdYHjmPGwmFFuZmxYw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"botUuids\": [\"f6aa8daf-4090-434e-bdc3-125e2566d263\", \"f8767e84-a9a8-41b5-9f45-818f34ae5db9\", \"0ba32625-194f-495e-8e55-1b1529291ba1\"] \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Stage backend}}/bot/stopBots",
+					"host": [
+						"{{Stage backend}}"
+					],
+					"path": [
+						"bot",
+						"stopBots"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "stopBots",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"botUuids\": [\"uuid\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Stage backend}}/bot/stopBots",
+							"host": [
+								"{{Stage backend}}"
+							],
+							"path": [
+								"bot",
+								"stopBots"
+							]
+						}
+					},
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "stopBots_Just_1_deleted",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJza3lyZXhVc2VyVXVpZCI6IjBkZjNiYTk2LTA2ZjAtNDg1MC1iOWQ5LWJmZWE3ODVmZTc0MiIsInJvbGUiOiJ1c2VyIiwibGFzdExvZ2luIjoiMjAyNS0wOS0wOFQwODoxMzo1NS4yOTVaIiwic2Vzc2lvblV1aWQiOiIwMmU1MDRjNi1jODM4LTQ1OWEtODAzOC0yNjkxMzg0MTAxNmEiLCJpYXQiOjE3NTczMTkyMzUsImV4cCI6MTc1NzMyMDEzNX0.st4PKlCTGkkaJ64vxGj_B9-lcPdYHjmPGwmFFuZmxYw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"botUuids\": [\"f6aa8daf-4090-434e-bdc3-125e2566d263\", \"f8767e84-a9a8-41b5-9f45-818f34ae5db9\", \"0ba32625-194f-495e-8e55-1b1529291ba1\"] \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Stage backend}}/bot/stopBots",
+					"host": [
+						"{{Stage backend}}"
+					],
+					"path": [
+						"bot",
+						"stopBots"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "stopBots",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"botUuids\": [\"uuid\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Stage backend}}/bot/stopBots",
+							"host": [
+								"{{Stage backend}}"
+							],
+							"path": [
+								"bot",
+								"stopBots"
+							]
+						}
+					},
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "Stage backend",
+			"value": "https://dev.skyrexio.com"
+		},
+		{
+			"key": "Token",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJza3lyZXhVc2VyVXVpZCI6IjBkZjNiYTk2LTA2ZjAtNDg1MC1iOWQ5LWJmZWE3ODVmZTc0MiIsInJvbGUiOiJ1c2VyIiwibGFzdExvZ2luIjoiMjAyNS0wOS0wOFQwNzo1NDozNy4xODJaIiwic2Vzc2lvblV1aWQiOiIwMmU1MDRjNi1jODM4LTQ1OWEtODAzOC0yNjkxMzg0MTAxNmEiLCJpYXQiOjE3NTczMTgwNzcsImV4cCI6MTc1NzMxODk3N30.MHX6wVL17ok1qKoDE7XA6NDq58fpf2ooLlKzeFKnZqQ"
+		}
+	]
+}
